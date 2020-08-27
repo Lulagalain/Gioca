@@ -1,0 +1,108 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	<link rel="stylesheet" type="text/css" href="CSS.css">
+
+ 	<div class="topnav" align="center" link rel="stylesheet" type="text/css" href="CSS.css">
+
+  <input type="text" placeholder="Search..">
+</div>
+    
+
+ 	<div class="Primero" link rel="stylesheet" type="text/css" href="CSS.css">
+	<table>
+		<tr>
+			<td><img src="lamour.jpg" width="110"> </td>
+
+			<td>  <img class="img" src="logo.jpg" title="Gioca" alt="Gioca" width="250"></td>
+
+			<td> <h2>Producto/servicio </h2>
+				 <h3>Industria Femenina y Accesorios hechos a mano </h3>
+				 <h3>Shop Online-Envìos a todo el paìs</h3> 
+			</td>
+		</tr>
+	</table>
+</div class="Primero">
+	
+ </head>
+
+ <body>
+
+ 	<div class="Productos">
+ 	
+
+ 	<table> 
+ 		<tr> 
+
+ 		<td><a href="Pagina foto 0,1"> <img src="foto0,1.jpg" style="width:100%" onclick="onClick(this)" id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'"></a></td>
+
+ 		<td> <a href="Pagina foto 2"> <img src="foto1.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+ 		
+ 		 
+ 		<td> <a href="Pagina foto 3"> <img src="foto2.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+ 	     
+
+ 	    <td><a href="Pagina foto 4"> <img src="foto3.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+
+ 	    <td><a href="Pagina foto 4,0"> <img src="foto4.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+ 	 </tr>
+
+ 	 <tr>
+ 	 	
+ 	 	<td><img src="foto8.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto5.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto6.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto7.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto9.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 </tr>
+
+  </table>
+  </div>
+
+  
+
+  	
+  			
+
+  </div>
+
+<div class="w3-content w3-display-container"  align="center">
+  <img class="mySlides" src="Sale.jpg" style="width:90%">
+  <img class="mySlides" src="Vinchas.jpg" style="width:90%">
+  <img class="mySlides" src="Accesorios.jpg" style="width:90%">
+  <img class="mySlides" src="Gioca.jpg" style="width:90%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+ </body>
+ </html>
+ 
