@@ -1,0 +1,139 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	 
+ 	<title></title>
+ 	<link rel="stylesheet" type="text/css" href="estilos.css">
+ </head>
+
+
+
+ <body>
+
+ 	<div class="topnav" align="center">
+
+  <input type="text" placeholder="Search..">
+</div>
+
+
+<div class="Primero">
+	<table>
+		<tr>
+			<td><img src="lamour.jpg" width="110"> </td>
+
+			<td>  <img class="img" src="logo.jpg" title="Gioca" alt="Gioca" width="250"></td>
+
+			<td> 
+				<img src="descripcion.jpg" width="80%" align="center">
+				
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+ 	<div class="Productos">
+ 	
+
+ 	<table> 
+ 		<tr> 
+
+ 		<td><a href="Buzos.html"> <img src="foto0,1.jpg" style="width:100%" onclick="onClick(this)" id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'"></a></td>
+
+ 		<td> <a href="Poleras.html"> <img src="foto1.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+ 		
+ 		 
+ 		<td> <a href="Pagina foto 3"> <img src="foto2.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+ 	     
+
+ 	    <td><a href="Poleras.html"> <img src="foto3.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+
+ 	    <td><a href="Pagina foto 4,0"> <img src="foto4.jpg" style="width:100%" onclick="onClick(this)"></a></td>
+ 	 </tr>
+
+ 	 <tr>
+ 	 	
+ 	 	<td><img src="foto8.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto5.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto6.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto7.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 	<td><img src="foto9.jpg" style="width:100%" onclick="onClick(this)"></td>
+
+ 	 </tr>
+
+  </table>
+  </div>
+
+  
+
+  	
+  			
+
+  </div>
+
+<div class="w3-content w3-display-container"  align="center">
+  <img class="mySlides" src="Sale.jpg" style="width:90%">
+  <img class="mySlides" src="Vinchas.jpg" style="width:90%">
+  <img class="mySlides" src="Accesorios.jpg" style="width:90%">
+  <img class="mySlides" src="Gioca.jpg" style="width:90%">
+
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<div class="Nosotras" align="center">
+
+	<img src="Ubicacion.jpg" width="80%">
+
+</div>
+
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
+
+
+ </body>
+ </html>
+ 
